@@ -1,8 +1,8 @@
 {
-	"name":	"wiki-plugin-radar",
-	"version":	"0.1.0",
-	"description": "Federated Wiki - Radar Plug-in",
-	"keywords":	[
+  "name": "wiki-plugin-radar",
+  "version": "0.1.1",
+  "description": "Federated Wiki - Radar Plug-in",
+  "keywords": [
     "wiki",
     "federated wiki",
     "plugin"
