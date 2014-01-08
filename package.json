@@ -35,10 +35,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/paul90/wiki-plugin-radar.git"
+    "url": "https://github.com/fedwiki/wiki-plugin-radar.git"
   },
   "bugs": {
-    "url": "https://github.com/paul90/wiki-plugin-radar/issues"
+    "url": "https://github.com/fedwiki/wiki-plugin-radar/issues"
   },
   "engines": {
     "node": "0.10"

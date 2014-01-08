@@ -16,7 +16,7 @@
     {
       "type": "paragraph",
       "id": "b5f2a8b73fa6bf0a",
-      "text": "See [https://github.com/WardCunningham/Smallest-Federated-Wiki/tree/master/client/plugins/radar GitHub] for plugin source."
+      "text": "See [https://github.com/fedwiki/wiki-plugin-radar GitHub] for plugin source."
     },
     {
       "type": "paragraph",
@@ -909,6 +909,16 @@
         "text": "See [https://github.com/WardCunningham/Smallest-Federated-Wiki/tree/master/client/plugins/radar GitHub] for plugin source."
       },
       "date": 1350500293644
+    },
+    {
+      "type": "edit",
+      "id": "b5f2a8b73fa6bf0a",
+      "item": {
+        "type": "paragraph",
+        "id": "b5f2a8b73fa6bf0a",
+        "text": "See [https://github.com/fedwiki/wiki-plugin-radar GitHub] for plugin source."
+      },
+      "date": 1389183220416
     }
   ]
 }
