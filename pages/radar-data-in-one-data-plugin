@@ -7,9 +7,9 @@
       "text": "The radar plugin will look to its left for data plugins. Try using this sample material data to compare various radar plugin configurations."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "6aa11505f4408f76",
-      "text": "<h3> Example Charts"
+      "text": "<h3>Example Charts</h3>"
     },
     {
       "type": "paragraph",
@@ -37,9 +37,9 @@
       "text": "[[Discover both Dimensions and Limits]] — blank"
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "097d0caf9f3feb1e",
-      "text": "<h3> Sample Data"
+      "text": "<h3>Sample Data</h3>"
     },
     {
       "text": "Materials Summary",
@@ -117,9 +117,9 @@
       "text": "The example radar charts expect to find this sample data. To use these charts with different datasets you may need to revise the specified dimensions or limits."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "0b2632f7a4bbc93a",
-      "text": "<i>Data from [http://www.apparelcoalition.org/storage/Nike_MSI_2012_0724b.pdf Nike MSI] material sustainability index."
+      "text": "<i>Data from [http://www.apparelcoalition.org/storage/Nike_MSI_2012_0724b.pdf Nike MSI] material sustainability index.</i>"
     }
   ],
   "journal": [
@@ -409,6 +409,67 @@
       "type": "remove",
       "id": "791e17f48700c89b",
       "date": 1350424708566
+    },
+    {
+      "type": "edit",
+      "id": "6aa11505f4408f76",
+      "item": {
+        "type": "html",
+        "id": "6aa11505f4408f76",
+        "text": "<h3> Example Charts"
+      },
+      "date": 1418371342825
+    },
+    {
+      "type": "edit",
+      "id": "6aa11505f4408f76",
+      "item": {
+        "type": "html",
+        "id": "6aa11505f4408f76",
+        "text": "<h3>Example Charts</h3>"
+      },
+      "date": 1418371355368
+    },
+    {
+      "type": "edit",
+      "id": "097d0caf9f3feb1e",
+      "item": {
+        "type": "html",
+        "id": "097d0caf9f3feb1e",
+        "text": "<h3> Sample Data"
+      },
+      "date": 1418371357393
+    },
+    {
+      "type": "edit",
+      "id": "097d0caf9f3feb1e",
+      "item": {
+        "type": "html",
+        "id": "097d0caf9f3feb1e",
+        "text": "<h3>Sample Data</h3>"
+      },
+      "date": 1418371365131
+    },
+    {
+      "type": "edit",
+      "id": "0b2632f7a4bbc93a",
+      "item": {
+        "type": "html",
+        "id": "0b2632f7a4bbc93a",
+        "text": "<i>Data from [http://www.apparelcoalition.org/storage/Nike_MSI_2012_0724b.pdf Nike MSI] material sustainability index."
+      },
+      "date": 1418371367091
+    },
+    {
+      "type": "edit",
+      "id": "0b2632f7a4bbc93a",
+      "item": {
+        "type": "html",
+        "id": "0b2632f7a4bbc93a",
+        "text": "<i>Data from [http://www.apparelcoalition.org/storage/Nike_MSI_2012_0724b.pdf Nike MSI] material sustainability index.</i>"
+      },
+      "date": 1418371372625
     }
-  ]
+  ],
+  "plugin": "radar"
 }
