@@ -94,19 +94,14 @@
       "text": "Table 60"
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "d03a46eab3cded75",
-      "text": "From <i>Overview of United States Software Industry Results Circa 2012\t\t\n"
+      "text": "From <i>Overview of United States Software Industry Results Circa 2012<br>\n<br>\nVersion 8.1.  July 27, 2012<br>\n<br>\nCopyright © 2008-2012 by Capers Jones.  All rights reserved.</i>\t\t\n"
     },
     {
       "type": "paragraph",
       "id": "5227ce0f0b8d59b5",
-      "text": "Version 8.1.  July 27, 2012\t\t\n"
-    },
-    {
-      "type": "paragraph",
-      "id": "791e17f48700c89b",
-      "text": "Copyright © 2008-2012 by Capers Jones.  All rights reserved.\t\t"
+      "text": "\t\t\n"
     },
     {
       "type": "radar",
@@ -743,6 +738,88 @@
         "text": "156.8 MIS\n122.375 Web\n111.3 Outsource\n105.6 Embedded\n141.5 Commercial\n244 Government\n270.45 Military"
       },
       "date": 1350419945540
+    },
+    {
+      "type": "edit",
+      "id": "d03a46eab3cded75",
+      "item": {
+        "type": "html",
+        "id": "d03a46eab3cded75",
+        "text": "From <i>Overview of United States Software Industry Results Circa 2012\t\t\n"
+      },
+      "date": 1418363438220
+    },
+    {
+      "type": "edit",
+      "id": "d03a46eab3cded75",
+      "item": {
+        "type": "html",
+        "id": "d03a46eab3cded75",
+        "text": "From <i>Overview of United States Software Industry Results Circa 2012</i>\t\t\n"
+      },
+      "date": 1418363445106
+    },
+    {
+      "type": "edit",
+      "id": "5227ce0f0b8d59b5",
+      "item": {
+        "type": "paragraph",
+        "id": "5227ce0f0b8d59b5",
+        "text": "\t\t\n"
+      },
+      "date": 1418363474847
+    },
+    {
+      "type": "edit",
+      "id": "d03a46eab3cded75",
+      "item": {
+        "type": "html",
+        "id": "d03a46eab3cded75",
+        "text": "From <i>Overview of United States Software Industry Results Circa 2012</br>\n\nVersion 8.1.  July 27, 2012</i>\t\t\n"
+      },
+      "date": 1418363489759
+    },
+    {
+      "type": "edit",
+      "id": "d03a46eab3cded75",
+      "item": {
+        "type": "html",
+        "id": "d03a46eab3cded75",
+        "text": "From <i>Overview of United States Software Industry Results Circa 2012<br>\n\nVersion 8.1.  July 27, 2012</i>\t\t\n"
+      },
+      "date": 1418370989728
+    },
+    {
+      "type": "move",
+      "order": [
+        "668685b9d3fde407",
+        "6ec5e7600a33225a",
+        "791e17f48700c89b",
+        "d03a46eab3cded75",
+        "5227ce0f0b8d59b5",
+        "4aac7cfc961ec911",
+        "3d3b0e08924cea4f",
+        "4aac7cfc961ec912",
+        "00858b1386f3688c"
+      ],
+      "id": "791e17f48700c89b",
+      "date": 1418371001600
+    },
+    {
+      "type": "edit",
+      "id": "d03a46eab3cded75",
+      "item": {
+        "type": "html",
+        "id": "d03a46eab3cded75",
+        "text": "From <i>Overview of United States Software Industry Results Circa 2012<br>\n<br>\nVersion 8.1.  July 27, 2012<br>\n<br>\nCopyright © 2008-2012 by Capers Jones.  All rights reserved.</i>\t\t\n"
+      },
+      "date": 1418371029998
+    },
+    {
+      "type": "remove",
+      "id": "791e17f48700c89b",
+      "date": 1418371036924
     }
-  ]
+  ],
+  "plugin": "radar"
 }

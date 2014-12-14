@@ -19,9 +19,9 @@
       "text": "See [https://github.com/fedwiki/wiki-plugin-radar GitHub] for plugin source."
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "239efa2f95c4f4fc",
-      "text": "<h3> Examples"
+      "text": "<h3>Examples</h3>"
     },
     {
       "type": "paragraph",
@@ -39,9 +39,9 @@
       "text": "[[Growth Beyond Requirements]]"
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "92aa9c49ce5bf039",
-      "text": "<h3> Configuration"
+      "text": "<h3>Configuration</h3>"
     },
     {
       "type": "paragraph",
@@ -109,9 +109,9 @@
       "text": "[[Radar Data in Method Plugins]]"
     },
     {
-      "type": "paragraph",
+      "type": "html",
       "id": "fee5811df93b86d5",
-      "text": "<h3> About the Name"
+      "text": "<h3>About the Name</h3>"
     },
     {
       "type": "paragraph",
@@ -919,6 +919,67 @@
         "text": "See [https://github.com/fedwiki/wiki-plugin-radar GitHub] for plugin source."
       },
       "date": 1389183220416
+    },
+    {
+      "type": "edit",
+      "id": "239efa2f95c4f4fc",
+      "item": {
+        "type": "html",
+        "id": "239efa2f95c4f4fc",
+        "text": "<h3> Examples"
+      },
+      "date": 1418363309433
+    },
+    {
+      "type": "edit",
+      "id": "239efa2f95c4f4fc",
+      "item": {
+        "type": "html",
+        "id": "239efa2f95c4f4fc",
+        "text": "<h3>Examples</h3>"
+      },
+      "date": 1418363319782
+    },
+    {
+      "type": "edit",
+      "id": "92aa9c49ce5bf039",
+      "item": {
+        "type": "html",
+        "id": "92aa9c49ce5bf039",
+        "text": "<h3> Configuration"
+      },
+      "date": 1418363323391
+    },
+    {
+      "type": "edit",
+      "id": "92aa9c49ce5bf039",
+      "item": {
+        "type": "html",
+        "id": "92aa9c49ce5bf039",
+        "text": "<h3>Configuration</h3>"
+      },
+      "date": 1418363330405
+    },
+    {
+      "type": "edit",
+      "id": "fee5811df93b86d5",
+      "item": {
+        "type": "html",
+        "id": "fee5811df93b86d5",
+        "text": "<h3> About the Name"
+      },
+      "date": 1418363337878
+    },
+    {
+      "type": "edit",
+      "id": "fee5811df93b86d5",
+      "item": {
+        "type": "html",
+        "id": "fee5811df93b86d5",
+        "text": "<h3>About the Name</h3>"
+      },
+      "date": 1418363346293
     }
-  ]
+  ],
+  "plugin": "radar"
 }
