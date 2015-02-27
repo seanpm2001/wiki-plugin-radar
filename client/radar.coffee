@@ -1,3 +1,10 @@
+###
+ * Federated Wiki : Radar Plugin
+ *
+ * Licensed under the MIT license.
+ * https://github.com/fedwiki/wiki-plugin-radar/blob/master/LICENSE.txt
+###
+
 window.plugins.radar =
   bind: (div, item) ->
   emit: (div, item) ->
