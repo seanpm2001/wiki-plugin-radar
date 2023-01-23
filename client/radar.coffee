@@ -54,9 +54,9 @@ window.plugins.radar =
         wiki.log 'limits from data', limit
 
       candidates = $(".item:lt(#{$('.item').index(div)})")
-      if (who = candidates.filter ".radar-source").size()
+      if (who = candidates.filter ".radar-source").length
         data = (d.radarData() for d in who)
-      else if (who = candidates.filter ".data").size()
+      else if (who = candidates.filter ".data").length
         rows = who.filter (d) -> $(this).data('item').data.length == 1
         if rows.length > 0
           data = ($(d).data('item').data[0] for d in rows)
@@ -100,7 +100,7 @@ window.plugins.radar =
             throw "Missing value for '#{k}'"
         (100.0*value(obj[k])/limit[k] for k in keys.concat(keys[0]))
 
-      div.dblclick (e) ->
+      div.on 'dblclick', (e) ->
         if e.shiftKey
           wiki.dialog "JSON for Radar plugin",  $('<pre/>').text(JSON.stringify(item, null, 2))
         else
@@ -165,7 +165,7 @@ window.plugins.radar =
       vizBody.attr "transform", "translate(#{centerXPos},#{centerYPos})" + rotate(0)
 
       lastThumb = null
-      who.bind 'thumb', (e, thumb) ->
+      who.on 'thumb', (e, thumb) ->
         return if thumb == lastThumb || -1 == (index = keys.indexOf lastThumb = thumb)
         vizBody.transition().duration(750)
           .attr "transform", "translate(#{centerXPos},#{centerYPos})" + rotate(-index)
