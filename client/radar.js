@@ -231,33 +231,6 @@ async function emit($item, item) {
     .attr('dy', (d) => -1 * radius(d))
     .text(String)
 
-  const lineAxes = vizBody.selectAll('.line-ticks')
-    .data(hours)
-    .enter()
-    .append('g')
-      .attr('transform', (d, i) => rotate(i)+translate(100))
-      .attr('class', 'line-ticks')
-  lineAxes.append('line')
-    .attr('x2', -1 * radius(maxVal))
-    .style('stroke', ruleColor)
-    .style('fill', 'none')
-  lineAxes.append('text')
-    .text((d,i) => keyArray[i].slice(0, 20))
-    .attr('x', 5)
-    .attr('y', -5)
-    .attr('text-anchor', 'start')
-    .style('stroke', ruleColor)
-    .style('cursor', 'pointer')
-    .style('font-size', '14px')
-    .attr('transform', 'rotate(180)')
-    .on('click', (d, i) => {
-      let page = null
-      if (!d.shiftKey) {
-        page = $item.parents('.page')
-      }
-      wiki.doInternalLink(keyArray[i], page)
-    })
-
   const fill = d3.schemeCategory10
   const colorSelector = (d, i) => fill[i]
 
@@ -295,6 +268,33 @@ async function emit($item, item) {
         .text('*')
         .append('text')
           .text((d) => d.comment)
+
+  const lineAxes = vizBody.selectAll('.line-ticks')
+    .data(hours)
+    .enter()
+    .append('g')
+      .attr('transform', (d, i) => rotate(i)+translate(100))
+      .attr('class', 'line-ticks')
+  lineAxes.append('line')
+    .attr('x2', -1 * radius(maxVal))
+    .style('stroke', ruleColor)
+    .style('fill', 'none')
+  lineAxes.append('text')
+    .text((d,i) => keyArray[i].slice(0, 20))
+    .attr('x', 5)
+    .attr('y', -5)
+    .attr('text-anchor', 'start')
+    .style('stroke', ruleColor)
+    .style('cursor', 'pointer')
+    .style('font-size', '14px')
+    .attr('transform', 'rotate(180)')
+    .on('click', (d, i) => {
+      let page = null
+      if (!d.shiftKey) {
+        page = $item.parents('.page')
+      }
+      wiki.doInternalLink(keyArray[i], page)
+    })
 
 
 }
