@@ -138,8 +138,9 @@ async function emit($item, item) {
     if (e.shiftKey) {
       wiki.dialog('JSON for Radar plugin', `<pre>${JSON.stringify(item, null, 2)}</pre>`)
     } else {
-      if (item.text != null && item.text.march(/\S/)) {
-        item.text = (keyArray.forEach(k => `${limit[k]} ${k}`)).join('\n')
+      if (!(item.text != null && item.text.match(/\S/))) {
+        wiki.log('in dblclick', keyArray)
+        item.text = (keyArray.map(k => `${limit[k]} ${k}`)).join('\n')
       }
       wiki.textEditor($item,item)
     }
