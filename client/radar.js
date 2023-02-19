@@ -157,6 +157,7 @@ async function emit($item, item) {
 
   const dimension = keyArray.length
   const ruleColor = '#EEE'
+  const labelColor = '#CCC'
 
   const angle = (i) => {
     return (i / dimension) * 2 * Math.PI
@@ -244,7 +245,7 @@ async function emit($item, item) {
         .attr('class', 'line')
         .style('fill', colorSelector)
         .style('stroke', colorSelector)
-        .style('stroke=width', 3)
+        .style('stroke-width', 3)
         .style('fill-opacity', 0.1)
         .style('fill', colorSelector)
         .attr('d', d3.lineRadial()
@@ -285,7 +286,7 @@ async function emit($item, item) {
     .attr('x', 5)
     .attr('y', -5)
     .attr('text-anchor', 'start')
-    .style('stroke', ruleColor)
+    .style('stroke', labelColor)
     .style('cursor', 'pointer')
     .style('font-size', '14px')
     .attr('transform', 'rotate(180)')
