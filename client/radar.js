@@ -46,7 +46,6 @@ async function emit($item, item) {
         keyArray.push(args[1])
       }
     })
-    wiki.log('radar parseText', keyArray, limit, max)
   }
 
   const limitsFromData = (data) => {
@@ -56,7 +55,6 @@ async function emit($item, item) {
         let [k, v] = entry
         let vv = value(v)
         if (!isNaN(vv)) {
-          wiki.log('limits from data keys', k, v, vv)
           if (limit[k]) {
             if (vv > limit[k]) {
               limit[k] = vv
@@ -67,7 +65,6 @@ async function emit($item, item) {
         }
       })
     })
-    wiki.log('limits from data', limit)
   }
 
   let data
@@ -85,7 +82,6 @@ async function emit($item, item) {
   } else {
     throw("Can't find suitable data")
   }
-  wiki.log('radar data', data)
 
   if (item.text != null && item.text.match(/\S/)) {
     parseText(item.text)
@@ -104,7 +100,6 @@ async function emit($item, item) {
     limitsFromData(data)
     keyArray = Object.keys(limit)
   }
-  wiki.log('radar limit', limit)
 
   const complete = (object) => {
     return keyArray.every(key => object[key] != null)
@@ -138,7 +133,6 @@ async function emit($item, item) {
       wiki.dialog('JSON for Radar plugin', `<pre>${JSON.stringify(item, null, 2)}</pre>`)
     } else {
       if (!(item.text != null && item.text.match(/\S/))) {
-        wiki.log('in dblclick', keyArray)
         item.text = (keyArray.map(k => `${limit[k]} ${k}`)).join('\n')
       }
       wiki.textEditor($item,item)
@@ -168,7 +162,6 @@ async function emit($item, item) {
     return `translate(${radius(maxVal * percent/100)})`
   }
   const series = data.map(d => percents(d))
-  wiki.log('radar series', series)
   const comments = []
   data.forEach(m => {
     for (let d = 0; d < dimension - 1; d++) {
