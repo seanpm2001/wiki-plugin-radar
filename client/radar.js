@@ -5,9 +5,9 @@
  * https://github.com/fedwiki/wiki-plugin-radar/blob/master/LICENSE.txt
  */
 
+import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm";
 
 async function emit($item, item) {
-  const d3 = await import('https://cdn.jsdelivr.net/npm/d3@7/+esm')
 
   $item.append('<style>svg { font: 10px sans-serif;}</style>')
 
@@ -36,6 +36,7 @@ async function emit($item, item) {
   }
 
   const parseText = (text) => {
+    let args
     text.split('\n').forEach(line => {
       if (args = line.match(/^([0-9.eE-]+) +([\w \/%(){},&-]+)$/)) {
         keyArray.push(args[2])
@@ -68,6 +69,7 @@ async function emit($item, item) {
   }
 
   let data
+  let who
 
   const candidates = $('.item:lt('.concat($('.item').index($item), ')'))
   if ((who = candidates.filter('.radar-source')).length) {
@@ -165,6 +167,7 @@ async function emit($item, item) {
   const comments = []
   data.forEach(m => {
     for (let d = 0; d < dimension - 1; d++) {
+      let o, c
       if ((o = m[keyArray[d]]) != null) {
         if ((c = o.comment) != null) {
           comments.push({
@@ -195,12 +198,13 @@ async function emit($item, item) {
     .domain([minVal, maxVal])
     .range([0, (circleConstraint / 2)])
   const radiusLength = radius(maxVal)
-  centerXPos = widthCircleConstraint / 2 + vizPadding.left
-  centerYPos = heightCircleConstraint /2 + vizPadding.top
+  const centerXPos = widthCircleConstraint / 2 + vizPadding.left
+  const centerYPos = heightCircleConstraint /2 + vizPadding.top
   vizBody.attr('transform', `translate(${centerXPos},${centerYPos})` + rotate(0))
 
   let lastThumb = null
   who.on('thumb', (e, thumb) => {
+    let index
     if (thumb == lastThumb || -1 == (index = keyArray.indexOf(lastThumb = thumb))) {
       return
     }
